@@ -21,6 +21,6 @@ if len(argv) == 2:
         print((argv[1] + " is an invalid option!"))
 else:
     system("mkdir /var/db/pkg-update-check 2>/dev/null")
-    system( checkpkgupgrade + " > /var/db/pkg-update-check/pkg-update-list")
+    system(checkpkgupgrade + " > /var/db/pkg-update-check/pkg-update-list")
     system("chmod 755 /var/db/pkg-update-check")
     system("chmod 755 /var/db/pkg-update-check/*")
